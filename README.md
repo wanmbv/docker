@@ -29,7 +29,30 @@
  
     MAINTAINER mail xxx@163.com
    
- > RUN(执行指令)：RUN <command>或RUN["executable","param1","param2"], 指令过长时，可以使用 \ 换行
+ > RUN(执行指令)：RUN <command>或RUN["executable", "param1", "param2"], 指令过长时，可以使用 \ 换行
  
-     RUN mkdir /tmp
-     RUN chmod 777 /opt/start.sh && chmod +x /opt/start.sh
+    RUN mkdir /tmp
+    RUN chmod 777 /opt/start.sh && chmod +x /opt/start.sh
+     
+ > CMD(执行指令)：CMD ["executable", "param1", "param2"], CMD command param1 param2, CMD["param1", "parma2"]提供ENTRYPOINT的默认参数
+ 
+    CMD["start.sh"] 
+  
+ > LABEL(声明指令)：LABEL <key>=<value> <key>=<value>
+
+    LABEL JVM_XMS="128m"
+    
+ > EXPOSE(声明指令)： EXPOSE <port> [<port>...]，映射端口
+ 
+ > ENV(构建指令)：ENV <key>=<value>
+ 
+     ENV PATH="/opt/tas/"
+    
+ > ADD(构建指令)：ADD <src> <dest>
+   COPY(构建指令)：COPY <src> <dest>
+ 
+ > ENTRYPOINT(执行指令)：ENTRYPOINT["executable", "param1", "param2"], ENTRYPOINT command param1 param2
+ 
+ > VOLUME(声明指令)： VOLUMN ["/data"]
+ 
+     VOLUMN ["/writ"]
