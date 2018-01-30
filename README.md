@@ -21,7 +21,15 @@
 
 ## 镜像制作
 1. dockerFile指令
->FROM(构建指令):FROM <image>或FROM <image><tag>(可以在dockerFile中多次使用)
+> FROM(构建指令):FROM <image>或FROM <image><tag>(可以在dockerFile中多次使用)
 
     FROM base/centos:7.3-3
-    
+
+> MAINTAINER(声明指令)：MAINTAINER <name>
+ 
+    MAINTAINER mail xxx@163.com
+   
+ > RUN(执行指令)：RUN <command>或RUN["executable","param1","param2"], 指令过长时，可以使用 \ 换行
+ 
+     RUN mkdir /tmp
+     RUN chmod 777 /opt/start.sh && chmod +x /opt/start.sh
