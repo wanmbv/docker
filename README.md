@@ -21,4 +21,6 @@
 
 ## 镜像制作
 1. dockerFile指令
->from(构建指令)
+>FROM(构建指令):FROM <image>或FROM <image><tag>(可以在dockerFile中多次使用)
+    FROM base/centos:7.3-3
+    
