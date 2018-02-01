@@ -41,7 +41,7 @@ centos7环境安装，需要centos-extra repository可用，在CentOS-base.repo�
     -v /var/run/docker.sock:/var/run/docker.sock \
     portainer/portainer
     
-> 访问http://xxx:9090可以进入管理服务
+> 访问http://xxx:9000可以进入管理服务
     
 *开放需要的端口*
  
