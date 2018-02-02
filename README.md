@@ -35,12 +35,12 @@
     RUN chmod 777 /opt/start.sh && chmod +x /opt/start.sh
      
  > CMD(执行指令)：CMD ["executable", "param1", "param2"], CMD command param1 param2, CMD["param1", "parma2"]提供ENTRYPOINT的默认参数
- 
-    CMD["start.sh"] 
+
+    CMD["start.sh"] 
   
  > LABEL(声明指令)：LABEL <key>=<value> <key>=<value>
 
-    LABEL JVM_XMS="128m"
+    LABEL JVM_XMS="128m"
     
  > EXPOSE(声明指令)： EXPOSE <port> [<port>...]，映射端口
  
