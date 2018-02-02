@@ -32,7 +32,7 @@
  > RUN(执行指令)：RUN <command>或RUN["executable", "param1", "param2"], 指令过长时，可以使用 \ 换行
  
     RUN mkdir /tmp
-    RUN chmod 777 /opt/start.sh && chmod +x /opt/start.sh
+    RUN chmod 777 /opt/start.sh && chmod +x /opt/start.sh
      
  > CMD(执行指令)：CMD ["executable", "param1", "param2"], CMD command param1 param2, CMD["param1", "parma2"]提供ENTRYPOINT的默认参数
 
